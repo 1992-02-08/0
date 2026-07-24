@@ -1,11 +1,291 @@
-# Updated: 2026-07-24 19:52:31
-# Traffic: 0.0G / 4608G (0.0%)
+# Updated: 2026-07-24 19:58:56
+# Traffic: 444.8G / 4608G (9.7%)
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+- name: 🇭🇰AWS香港01
+  type: anytls
+  server: ahk.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: ahk.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬AWS新加坡01|电信优化|流媒体解锁
+  type: anytls
+  server: asg.jueduibupao.top
+  port: 443
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: asg.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬AWS新加坡02|电信优化
+  type: anytls
+  server: asg2.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬AWS新加坡03|电信优化|流媒体解锁
+  type: anytls
+  server: asg3.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵AWS日本01|流媒体解锁
+  type: anytls
+  server: ajp1.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵AWS日本02|流媒体解锁
+  type: anytls
+  server: ajp2.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷AWS韩国01|流媒体解锁
+  type: anytls
+  server: akr1.jueduibupao.top
+  port: 7000
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港HKT01|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55001
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT02|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55001
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT03|v6入口
+  type: anytls
+  server: shouzhuzhu.niubifast.cc
+  port: 45001
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT04|v6入口
+  type: anytls
+  server: feizhuzhu.niubifast.cc
+  port: 35001
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT05|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55102
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT06|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55102
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT07|v6入口
+  type: anytls
+  server: shouzhuzhu.niubifast.cc
+  port: 45102
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰香港HKT08|v6入口
+  type: anytls
+  server: feizhuzhu.niubifast.cc
+  port: 35102
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlhk2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬新加坡01|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55003
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlsg1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬新加坡02|流媒体解锁|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55003
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlsg1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬新加坡03|流媒体解锁|AI|v6入口
+  type: anytls
+  server: shouzhuzhu.niubifast.cc
+  port: 45003
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlsg1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬新加坡04|流媒体解锁|AI|v6入口
+  type: anytls
+  server: feizhuzhu.niubifast.cc
+  port: 35003
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlsg1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵日本01|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55004
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atljp1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵日本02|流媒体解锁|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55004
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atljp1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇳台湾01|Google play|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55005
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: tw2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇳台湾02|Google play|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55005
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: tw2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇳台湾03|Google play|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55006
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: tw3.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇳台湾04|Google play|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55006
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: tw3.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸亚特兰大01|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55007
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlus1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸亚特兰大02|流媒体解锁|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55007
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlus1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸凤凰城03|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55008
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlus2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸凤凰城04|流媒体解锁|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55508
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlus2.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦加拿大01|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55011
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlca1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦加拿大02|流媒体解锁|AI|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55012
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlca1.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪德国01|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55009
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlde.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪德国02|电信优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55009
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atlde.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇬🇧英国01|流媒体解锁|AI|移动优化
+  type: anytls
+  server: dafeizhu.xxxyun.top
+  port: 55010
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atluk.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇬🇧英国02|流媒体解锁|AI|移动优化
+  type: anytls
+  server: xiaofeizhu.xxxyun.top
+  port: 55010
+  password: 166981c4-b667-4e86-8eba-cc9c71939e10
+  sni: atluk.jueduibupao.top
+  skip-cert-verify: false
+  udp: true
 - name: 🇺🇸美国圣何塞-0.1倍-hy2
   type: hysteria2
   server: 134.195.101.199
@@ -1002,9 +1282,44 @@ proxies:
     public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU
     short-id: fd26d49a
 proxy-groups:
-- name: 手动选择 | 0.0G/4608G (0.0%)
+- name: 手动选择 | 444.8G/4608G (9.7%)
   type: select
   proxies:
+  - 🇭🇰AWS香港01
+  - 🇸🇬AWS新加坡01|电信优化|流媒体解锁
+  - 🇸🇬AWS新加坡02|电信优化
+  - 🇸🇬AWS新加坡03|电信优化|流媒体解锁
+  - 🇯🇵AWS日本01|流媒体解锁
+  - 🇯🇵AWS日本02|流媒体解锁
+  - 🇰🇷AWS韩国01|流媒体解锁
+  - 🇭🇰香港HKT01|移动优化
+  - 🇭🇰香港HKT02|电信优化
+  - 🇭🇰香港HKT03|v6入口
+  - 🇭🇰香港HKT04|v6入口
+  - 🇭🇰香港HKT05|移动优化
+  - 🇭🇰香港HKT06|电信优化
+  - 🇭🇰香港HKT07|v6入口
+  - 🇭🇰香港HKT08|v6入口
+  - 🇸🇬新加坡01|流媒体解锁|AI|移动优化
+  - 🇸🇬新加坡02|流媒体解锁|AI|电信优化
+  - 🇸🇬新加坡03|流媒体解锁|AI|v6入口
+  - 🇸🇬新加坡04|流媒体解锁|AI|v6入口
+  - 🇯🇵日本01|流媒体解锁|AI|移动优化
+  - 🇯🇵日本02|流媒体解锁|AI|电信优化
+  - 🇨🇳台湾01|Google play|AI|移动优化
+  - 🇨🇳台湾02|Google play|AI|电信优化
+  - 🇨🇳台湾03|Google play|AI|移动优化
+  - 🇨🇳台湾04|Google play|AI|电信优化
+  - 🇺🇸亚特兰大01|流媒体解锁|AI|移动优化
+  - 🇺🇸亚特兰大02|流媒体解锁|AI|电信优化
+  - 🇺🇸凤凰城03|流媒体解锁|AI|移动优化
+  - 🇺🇸凤凰城04|流媒体解锁|AI|电信优化
+  - 🇨🇦加拿大01|流媒体解锁|AI|移动优化
+  - 🇨🇦加拿大02|流媒体解锁|AI|电信优化
+  - 🇩🇪德国01|移动优化
+  - 🇩🇪德国02|电信优化
+  - 🇬🇧英国01|流媒体解锁|AI|移动优化
+  - 🇬🇧英国02|流媒体解锁|AI|移动优化
   - 🇺🇸美国圣何塞-0.1倍-hy2
   - 🇺🇸美国圣何塞2-0.1倍-hy2
   - 🇺🇸美国01-0.1倍 | 高速专线-hy2
@@ -1091,4 +1406,4 @@ proxy-groups:
   - 🇺🇸美国圣何塞07 | 三网推荐
   - 🇺🇸美国洛杉矶08 | 三网推荐
 rules:
-- MATCH,手动选择 | 0.0G/4608G (0.0%)
+- MATCH,手动选择 | 444.8G/4608G (9.7%)
