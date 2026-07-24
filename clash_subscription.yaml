@@ -4,32 +4,6 @@ mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-- name: 更新订阅报错请更新客户端
-  type: vless
-  server: 185.229.222.216
-  port: 443
-  uuid: 61d43320-947c-4690-8f83-1356cdbf91dc
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CBkV6zFn1TL1ZsmNRAFjtQLS4b0HILlSaOqEyB7ZnkA
-    short-id: 520980f1e04645
-- name: 特殊时期建议经常更新订阅
-  type: vless
-  server: 185.229.222.21
-  port: 443
-  uuid: 61d43320-947c-4690-8f83-1356cdbf91dc
-  network: tcp
-  tls: true
-  flow: xtls-rprx-vision
-  servername: zh-hk.vuejs.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 38tmeUIWru-CqbwS4Yf6Ic08QbvM9PP8CjbGVwEA1hw
-    short-id: c144680bc4d809
 - name: 🇭🇰AWS香港01
   type: anytls
   server: ahk.jueduibupao.top
@@ -324,32 +298,6 @@ proxies:
   password: 61d43320-947c-4690-8f83-1356cdbf91dc
   sni: 6bkr1.6bnw.top
   skip-cert-verify: false
-- name: 剩余流量：521.56%
-  type: vless
-  server: unamecf.xn--ghqu5fm27b67w.com
-  port: 443
-  uuid: d19c2ae7-a068-475c-ac46-f1158225cd0e
-  network: ws
-  tls: true
-  servername: ujp1.xn--ghqu5fm27b67w.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /pq/jp1
-    headers:
-      Host: ujp1.xn--ghqu5fm27b67w.com
-- name: 套餐到期：长期有效
-  type: vless
-  server: unamecf.xn--ghqu5fm27b67w.com
-  port: 443
-  uuid: d19c2ae7-a068-475c-ac46-f1158225cd0e
-  network: ws
-  tls: true
-  servername: ujp1.xn--ghqu5fm27b67w.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /pq/jp1
-    headers:
-      Host: ujp1.xn--ghqu5fm27b67w.com
 - name: 🇯🇵日本东京01-0.1倍 | 电信联通推荐
   type: vless
   server: unamecf.xn--ghqu5fm27b67w.com
@@ -1181,8 +1129,6 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 更新订阅报错请更新客户端
-  - 特殊时期建议经常更新订阅
   - 🇭🇰AWS香港01
   - 🇸🇬AWS新加坡01|电信优化|流媒体解锁
   - 🇸🇬AWS新加坡02|电信优化
@@ -1220,8 +1166,6 @@ proxy-groups:
   - 🇬🇧英国02|流媒体解锁|AI|移动优化
   - 🇨🇳台湾2-流媒体解锁|AI-hy2
   - 🇰🇷韩国-家宽-流媒体解锁|AI-hy2
-  - 剩余流量：521.56%
-  - 套餐到期：长期有效
   - 🇯🇵日本东京01-0.1倍 | 电信联通推荐
   - 🇯🇵日本东京02-0.1倍 | 电信联通推荐
   - 🇯🇵日本东京03-0.1倍 | 电信联通推荐
