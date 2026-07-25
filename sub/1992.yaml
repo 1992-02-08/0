@@ -1,5 +1,5 @@
-# Updated: 2026-07-24 20:03:08
-# Traffic: 924.8G / 4608G (20.1%)
+# Updated: 2026-07-25 04:04:39
+# Traffic: 925.0G / 4608G (20.1%)
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -1282,7 +1282,7 @@ proxies:
     public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU
     short-id: fd26d49a
 proxy-groups:
-- name: 手动选择 | 924.8G/4608G (20.1%)
+- name: 手动选择 | 925.0G/4608G (20.1%)
   type: select
   proxies:
   - 🇭🇰AWS香港01
@@ -1406,4 +1406,4 @@ proxy-groups:
   - 🇺🇸美国圣何塞07 | 三网推荐
   - 🇺🇸美国洛杉矶08 | 三网推荐
 rules:
-- MATCH,手动选择 | 924.8G/4608G (20.1%)
+- MATCH,手动选择 | 925.0G/4608G (20.1%)
