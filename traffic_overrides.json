@@ -1,0 +1,8 @@
+{
+    "traffic_overrides": {
+        "https://dash.pqjc.site/api/v1/pq/61c22bd6d8c7bcc810c1906cf612bfd9": {
+            "download_gb": 480,
+            "upload_gb": 0
+        }
+    }
+}
