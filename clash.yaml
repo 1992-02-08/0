@@ -1760,7 +1760,7 @@ proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
-  - DIRECT
+  - '0'
   - 🇺🇸美国洛杉矶02|流媒体|0.01x
   - 🇺🇸美国洛杉矶01|流媒体|0.01x
   - 🇬🇧英国伦敦01|CTCU|0.1x
