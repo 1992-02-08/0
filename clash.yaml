@@ -20,20 +20,6 @@ dns:
     geoip: true
     geoip-code: CN
 proxies:
-- name: 🇯🇵日本东京01 | 电信联通推荐-0.1倍
-  type: vless
-  server: 172.64.229.30
-  port: 443
-  uuid: acaaa258-e833-490b-a330-db4b97d605aa
-  udp: true
-  network: ws
-  ws-opts:
-    path: /kbjc/jp1
-    headers:
-      Host: jp1-jp1.aiopen.sbs
-  tls: true
-  servername: jp1-jp1.aiopen.sbs
-  client-fingerprint: chrome
 - name: 🇺🇸美国01 | 电信联通推荐-0.1倍
   type: vless
   server: 172.64.229.30
@@ -48,19 +34,33 @@ proxies:
   tls: true
   servername: us1-us1.aiopen.sbs
   client-fingerprint: chrome
-- name: 🇺🇸美国圣何塞2 | 高速专线
+- name: 🇯🇵日本东京01 | 电信联通推荐-0.1倍
   type: vless
-  server: 134.195.101.187
+  server: 172.64.229.30
+  port: 443
+  uuid: acaaa258-e833-490b-a330-db4b97d605aa
+  udp: true
+  network: ws
+  ws-opts:
+    path: /kbjc/jp1
+    headers:
+      Host: jp1-jp1.aiopen.sbs
+  tls: true
+  servername: jp1-jp1.aiopen.sbs
+  client-fingerprint: chrome
+- name: 🇺🇸美国阿什本
+  type: vless
+  server: 129.80.99.88
   port: 443
   uuid: acaaa258-e833-490b-a330-db4b97d605aa
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: safari
+  servername: updates.cdn-apple.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: PuA87-QwgLpJr4WyqC0e2aMFShkeovMT6recdpHPaSc
-    short-id: 67af2e70
+    public-key: CmZcK-NJ3i5iVDRiiBY3RpeiR2kooDbtJBOmPq29ABY
+    short-id: 0ccb4b57
   skip-cert-verify: false
 - name: 🇺🇸美国圣何塞
   type: vless
@@ -90,19 +90,19 @@ proxies:
     public-key: PuA87-QwgLpJr4WyqC0e2aMFShkeovMT6recdpHPaSc
     short-id: 67af2e70
   skip-cert-verify: false
-- name: 🇺🇸美国阿什本
+- name: 🇺🇸美国圣何塞2 | 高速专线
   type: vless
-  server: 129.80.99.88
+  server: 134.195.101.187
   port: 443
   uuid: acaaa258-e833-490b-a330-db4b97d605aa
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: updates.cdn-apple.com
-  client-fingerprint: ios
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: safari
   reality-opts:
-    public-key: CmZcK-NJ3i5iVDRiiBY3RpeiR2kooDbtJBOmPq29ABY
-    short-id: 0ccb4b57
+    public-key: PuA87-QwgLpJr4WyqC0e2aMFShkeovMT6recdpHPaSc
+    short-id: 67af2e70
   skip-cert-verify: false
 - name: 🇸🇬新加坡
   type: vless
@@ -166,9 +166,9 @@ proxies:
   port: 443
   password: acaaa258-e833-490b-a330-db4b97d605aa
   sni: www.apple.com
-- name: 🇯🇵日本2 | 高速专线-hy2
+- name: 🇯🇵日本 | 高速专线-hy2
   type: hysteria2
-  server: pq.aws54.yydjc.top:35000/
+  server: pq.aws53.yydjc.top:35000/
   port: 443
   password: acaaa258-e833-490b-a330-db4b97d605aa
   sni: www.apple.com
@@ -178,9 +178,9 @@ proxies:
   port: 443
   password: acaaa258-e833-490b-a330-db4b97d605aa
   sni: www.apple.com
-- name: 🇯🇵日本 | 高速专线-hy2
+- name: 🇯🇵日本2 | 高速专线-hy2
   type: hysteria2
-  server: pq.aws53.yydjc.top:35000/
+  server: pq.aws54.yydjc.top:35000/
   port: 443
   password: acaaa258-e833-490b-a330-db4b97d605aa
   sni: www.apple.com
@@ -216,20 +216,6 @@ proxies:
     public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
     short-id: bb9ab0d5242d53e9
   skip-cert-verify: false
-- name: 🇯🇵日本东京01 | 移动联通推荐
-  type: vless
-  server: pq.aws56.yydjc.top
-  port: 35000
-  uuid: acaaa258-e833-490b-a330-db4b97d605aa
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
-    short-id: bb9ab0d5242d53e9
-  skip-cert-verify: false
 - name: 🇯🇵日本东京02 | 移动联通推荐
   type: vless
   server: pq.aws57.yydjc.top
@@ -244,55 +230,69 @@ proxies:
     public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
     short-id: bb9ab0d5242d53e9
   skip-cert-verify: false
+- name: 🇯🇵日本东京01 | 移动联通推荐
+  type: vless
+  server: pq.aws56.yydjc.top
+  port: 35000
+  uuid: acaaa258-e833-490b-a330-db4b97d605aa
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
+    short-id: bb9ab0d5242d53e9
+  skip-cert-verify: false
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇯🇵日本东京01 | 电信联通推荐-0.1倍
   - 🇺🇸美国01 | 电信联通推荐-0.1倍
-  - 🇺🇸美国圣何塞2 | 高速专线
+  - 🇯🇵日本东京01 | 电信联通推荐-0.1倍
+  - 🇺🇸美国阿什本
   - 🇺🇸美国圣何塞
   - 🇺🇸美国圣何塞 | 高速专线
-  - 🇺🇸美国阿什本
+  - 🇺🇸美国圣何塞2 | 高速专线
   - 🇸🇬新加坡
   - 🇮🇳印度海得拉巴
   - 🇹🇼台湾Hinet
   - 🇮🇳印度孟买
   - 🇺🇸美国圣何塞-0.1倍-hy2
-  - 🇯🇵日本2 | 高速专线-hy2
-  - 🇯🇵日本3 | 高速专线-hy2
   - 🇯🇵日本 | 高速专线-hy2
+  - 🇯🇵日本3 | 高速专线-hy2
+  - 🇯🇵日本2 | 高速专线-hy2
   - 🇺🇸美国01-0.1倍 | 高速专线-hy2
   - 使用的设备过多
   - 在线设备数量超过套餐允许值！
   - 🇯🇵日本东京03 | 移动联通推荐
-  - 🇯🇵日本东京01 | 移动联通推荐
   - 🇯🇵日本东京02 | 移动联通推荐
+  - 🇯🇵日本东京01 | 移动联通推荐
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - 🇯🇵日本东京01 | 电信联通推荐-0.1倍
   - 🇺🇸美国01 | 电信联通推荐-0.1倍
-  - 🇺🇸美国圣何塞2 | 高速专线
+  - 🇯🇵日本东京01 | 电信联通推荐-0.1倍
+  - 🇺🇸美国阿什本
   - 🇺🇸美国圣何塞
   - 🇺🇸美国圣何塞 | 高速专线
-  - 🇺🇸美国阿什本
+  - 🇺🇸美国圣何塞2 | 高速专线
   - 🇸🇬新加坡
   - 🇮🇳印度海得拉巴
   - 🇹🇼台湾Hinet
   - 🇮🇳印度孟买
   - 🇺🇸美国圣何塞-0.1倍-hy2
-  - 🇯🇵日本2 | 高速专线-hy2
-  - 🇯🇵日本3 | 高速专线-hy2
   - 🇯🇵日本 | 高速专线-hy2
+  - 🇯🇵日本3 | 高速专线-hy2
+  - 🇯🇵日本2 | 高速专线-hy2
   - 🇺🇸美国01-0.1倍 | 高速专线-hy2
   - 使用的设备过多
   - 在线设备数量超过套餐允许值！
   - 🇯🇵日本东京03 | 移动联通推荐
-  - 🇯🇵日本东京01 | 移动联通推荐
   - 🇯🇵日本东京02 | 移动联通推荐
+  - 🇯🇵日本东京01 | 移动联通推荐
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
